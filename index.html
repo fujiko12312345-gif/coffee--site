@@ -3,84 +3,498 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>珈琲 燈</title>
+  <title>珈琲 燈 | 福岡・薬院</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- ヘッダー -->
-<header class="header">
-  <h1>珈琲 燈</h1>
-</header>
+  <!-- Nav -->
+  <nav class="top-nav">
+    <span class="nav-logo">珈琲 燈</span>
 
-<!-- メイン -->
-<section class="hero">
-  <img src="images/main.jpg">
-  <h2>福岡・薬院の路地裏</h2>
-  <p>一杯のコーヒーが、あなたの一日に小さな灯りになれば。</p>
-</section>
+    <ul class="nav-links">
+      <li><a href="#about">お店について</a></li>
+      <li><a href="#menu">メニュー</a></li>
+      <li><a href="#afternoon">午後のひととき</a></li>
+      <li><a href="#info">アクセス</a></li>
+    </ul>
 
-<!-- ABOUT -->
-<section class="section">
-  <h2>お店について</h2>
-  <p>
-    「珈琲 燈」は、福岡・薬院の路地裏にある小さな一軒家喫茶です。
-    店名は創業者である父がつけたもの。
-  </p>
-</section>
+    <button class="hamburger" id="hamburgerBtn" aria-label="メニュー">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
 
-<!-- MENU -->
-<section class="section">
-  <h2>メニュー</h2>
-
-  <h3>コーヒー</h3>
-  <div class="grid">
-    <div class="card"><img src="images/g.jpg"><p>ゲイシャ ¥1200</p></div>
-    <div class="card"><img src="images/e.jpg"><p>エチオピア ¥950</p></div>
-    <div class="card"><img src="images/b.jpg"><p>燈ブレンド ¥650</p></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">お店について</a>
+    <a href="#menu">メニュー</a>
+    <a href="#afternoon">午後のひととき</a>
+    <a href="#info">アクセス</a>
   </div>
 
-  <h3>スイーツ</h3>
-  <div class="grid">
-    <div class="card"><img src="images/c.jpg"><p>コーヒーゼリー ¥550</p></div>
-    <div class="card"><img src="images/p.jpg"><p>プリン ¥500</p></div>
-    <div class="card"><img src="images/s.jpg"><p>ケーキ ¥650</p></div>
-  </div>
+  <!-- Hero -->
+  <section class="hero">
+    <p class="hero-en">CAFÉ AKARI — YAKUIN, FUKUOKA</p>
+    <h1 class="hero-title">珈琲 燈</h1>
+    <p class="hero-sub">福岡・薬院の路地裏</p>
+    <div class="hero-divider"></div>
+    <p class="hero-tagline">
+      一杯のコーヒーが、<br>
+      あなたの一日に小さな灯りになれば。
+    </p>
+    <div class="hero-scroll">SCROLL</div>
+  </section>
 
-  <h3>モーニング</h3>
-  <div class="grid">
-    <div class="card"><img src="images/m.png"><p>モーニング ¥800</p></div>
-    <div class="card"><img src="images/t.jpg"><p>トースト ¥350</p></div>
-    <div class="card"><img src="images/cr.jpg"><p>サラダ ¥300</p></div>
-  </div>
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-text fade-in">
+          <p class="section-label">ABOUT</p>
+          <h2 class="section-title">お店について</h2>
+          <div class="section-divider"></div>
+          <p>「珈琲 燈」は、福岡・薬院の路地裏にある小さな一軒家喫茶です。店名は創業者である父がつけたもの。「一杯のコーヒーが、その人の一日に小さな灯りになれば」という想いが、今も変わらずこの店に流れています。</p>
+          <p>12席のこぢんまりとした店内には、開店当初から使い続けているカウンターとテーブルがあります。古いけれど、それがかえって落ち着くと言ってくださるお客様が多くて。</p>
+          <p>国内外の農園から、その季節に最も良い豆を少量ずつ仕入れています。豆によって抽出温度と時間をすべて変える。それがマスターのこだわりです。</p>
+        </div>
 
-</section>
+        <div class="about-visual fade-in">
+          <svg class="coffee-illustration" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="100" cy="148" rx="60" ry="18" fill="#C8853A" opacity="0.15"/>
+            <ellipse cx="100" cy="136" rx="54" ry="36" fill="#D4A855" opacity="0.2"/>
+            <ellipse cx="100" cy="124" rx="46" ry="30" fill="#C8853A" opacity="0.4"/>
+            <ellipse cx="100" cy="112" rx="36" ry="22" fill="#8B5E2E" opacity="0.7"/>
+            <ellipse cx="100" cy="106" rx="24" ry="16" fill="#3D2B1F"/>
+            <ellipse cx="88" cy="100" rx="7" ry="4" fill="#C8853A" opacity="0.3"/>
+            <path d="M108 88 Q118 72 114 58" stroke="#C4B8AE" stroke-width="2" stroke-linecap="round"/>
+            <path d="M104 84 Q116 64 110 48" stroke="#C4B8AE" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+            <rect x="72" y="158" width="56" height="14" rx="7" fill="#C4B8AE" opacity="0.5"/>
+            <rect x="58" y="170" width="84" height="8" rx="4" fill="#B4A89E" opacity="0.4"/>
+            <circle cx="148" cy="80" r="3" fill="#C8853A" opacity="0.3"/>
+            <circle cx="58" cy="60" r="2" fill="#C8853A" opacity="0.2"/>
+            <circle cx="160" cy="120" r="2" fill="#D4A855" opacity="0.3"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- ACCESS -->
-<section class="section">
-  <h2>アクセス</h2>
+  <!-- Menu -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">MENU</p>
+        <h2 class="section-title">メニュー</h2>
+        <div class="section-divider"></div>
+      </div>
 
-  <p>福岡県福岡市中央区薬院2丁目16-1</p>
+      <div class="menu-tabs fade-in">
+        <button class="menu-tab active" data-tab="coffee">コーヒー</button>
+        <button class="menu-tab" data-tab="sweets">スイーツ</button>
+        <button class="menu-tab" data-tab="morning">モーニング</button>
+      </div>
 
-  <!-- インスタ -->
-  <div class="insta-area">
-    <a href="https://www.instagram.com/fujiko_maemae/" target="_blank" class="insta-btn">
-      📷 Instagramを見る
-    </a>
-  </div>
+      <!-- Coffee -->
+      <div class="menu-panel active" id="tab-coffee">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-img" style="background:#F5ECD8;">
+              <svg width="80" height="80" viewBox="0 0 80 80">
+                <ellipse cx="40" cy="50" rx="24" ry="10" fill="#C8853A" opacity="0.25"/>
+                <ellipse cx="40" cy="46" rx="20" ry="16" fill="#D4A855" opacity="0.5"/>
+                <ellipse cx="40" cy="42" rx="16" ry="12" fill="#C8853A" opacity="0.75"/>
+                <ellipse cx="40" cy="38" rx="9" ry="7" fill="#3D2B1F"/>
+                <ellipse cx="35" cy="35" rx="2.5" ry="1.5" fill="#F5ECD8" opacity="0.4"/>
+                <path d="M46 30 Q53 21 50 14" stroke="#C4B8AE" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <rect x="30" y="58" width="20" height="5" rx="2.5" fill="#C4B8AE" opacity="0.5"/>
+                <rect x="24" y="62" width="32" height="3" rx="1.5" fill="#B4A89E" opacity="0.4"/>
+              </svg>
+            </div>
+            <div class="menu-card-body">
+              <p class="menu-card-name">燈ブレンド</p>
+              <p class="menu-card-desc">エチオピアとブラジルを合わせた自家製ブレンド。苦みと甘みのバランスを長年かけて作り上げました。</p>
+              <div class="menu-card-footer">
+                <span class="menu-price">¥ 650</span>
+                <span class="badge badge-popular">人気 No.1</span>
+              </div>
+            </div>
+          </div>
 
-  <!-- マップ -->
-  <div class="map">
-    <iframe src="https://www.google.com/maps?q=福岡県福岡市中央区薬院2丁目16-1&output=embed"></iframe>
-  </div>
+          <div class="menu-card">
+            <div class="menu-card-img" style="background:#F5ECD8;">
+              <svg width="80" height="80" viewBox="0 0 80 80">
+                <ellipse cx="40" cy="50" rx="24" ry="10" fill="#C8853A" opacity="0.2"/>
+                <ellipse cx="40" cy="46" rx="20" ry="16" fill="#E8C87A" opacity="0.5"/>
+                <ellipse cx="40" cy="42" rx="16" ry="12" fill="#D4A855" opacity="0.7"/>
+                <ellipse cx="40" cy="38" rx="9" ry="7" fill="#8B5E2E"/>
+                <ellipse cx="35" cy="35" rx="2.5" ry="1.5" fill="#F5ECD8" opacity="0.4"/>
+                <path d="M44 28 Q50 18 46 12" stroke="#C4B8AE" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <rect x="30" y="58" width="20" height="5" rx="2.5" fill="#C4B8AE" opacity="0.5"/>
+                <rect x="24" y="62" width="32" height="3" rx="1.5" fill="#B4A89E" opacity="0.4"/>
+              </svg>
+            </div>
+            <div class="menu-card-body">
+              <p class="menu-card-name">ゲイシャ</p>
+              <p class="menu-card-desc">エチオピア イルガチェフェ産。ジャスミンやベルガモットのような華やかな香り。ハンドドリップで丁寧に。</p>
+              <div class="menu-card-footer">
+                <span class="menu-price">¥ 1,200</span>
+                <span class="badge badge-seasonal">季節限定</span>
+              </div>
+            </div>
+          </div>
 
-</section>
+          <div class="menu-card">
+            <div class="menu-card-img" style="background:#F0EBE2;">
+              <svg width="80" height="80" viewBox="0 0 80 80">
+                <ellipse cx="40" cy="50" rx="24" ry="10" fill="#8B7355" opacity="0.2"/>
+                <ellipse cx="40" cy="46" rx="20" ry="16" fill="#B09878" opacity="0.35"/>
+                <ellipse cx="40" cy="42" rx="16" ry="12" fill="#8B7355" opacity="0.55"/>
+                <ellipse cx="40" cy="38" rx="9" ry="7" fill="#3D2B1F"/>
+                <ellipse cx="40" cy="34" rx="7" ry="2.5" fill="white" opacity="0.6"/>
+                <rect x="30" y="58" width="20" height="5" rx="2.5" fill="#C4B8AE" opacity="0.5"/>
+                <rect x="24" y="62" width="32" height="3" rx="1.5" fill="#B4A89E" opacity="0.4"/>
+              </svg>
+            </div>
+            <div class="menu-card-body">
+              <p class="menu-card-name">カフェラテ</p>
+              <p class="menu-card-desc">燈ブレンドとミルクをやさしく合わせて。ブラックが苦手な方にもおすすめです。</p>
+              <div class="menu-card-footer">
+                <span class="menu-price">¥ 750</span>
+              </div>
+            </div>
+          </div>
 
-<!-- フッター -->
-<footer>
-  <p>© 珈琲 燈</p>
-</footer>
+          <div class="menu-card">
+            <div class="menu-card-img" style="background:#F5ECD8;">
+              <svg width="80" height="80" viewBox="0 0 80 80">
+                <ellipse cx="40" cy="50" rx="24" ry="10" fill="#C8853A" opacity="0.2"/>
+                <ellipse cx="40" cy="46" rx="20" ry="16" fill="#E09060" opacity="0.4"/>
+                <ellipse cx="40" cy="42" rx="16" ry="12" fill="#C8853A" opacity="0.65"/>
+                <ellipse cx="40" cy="38" rx="9" ry="7" fill="#6B3A1F"/>
+                <ellipse cx="35" cy="35" rx="2.5" ry="1.5" fill="#F5ECD8" opacity="0.4"/>
+                <rect x="30" y="58" width="20" height="5" rx="2.5" fill="#C4B8AE" opacity="0.5"/>
+                <rect x="24" y="62" width="32" height="3" rx="1.5" fill="#B4A89E" opacity="0.4"/>
+              </svg>
+            </div>
+            <div class="menu-card-body">
+              <p class="menu-card-name">エチオピア ナチュラル</p>
+              <p class="menu-card-desc">ベリー系の甘みと複雑な果実感。コーヒーの新しい世界を体験したい方へ。</p>
+              <div class="menu-card-footer">
+                <span class="menu-price">¥ 950</span>
+                <span class="badge badge-seasonal">季節限定</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sweets -->
+      <div class="menu-panel" id="tab-sweets">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-img" style="background:#F5ECD8;">
+              <svg width="80" height="80" viewBox="0 0 80 80">
+                <ellipse cx="40" cy="62" rx="22" ry="6" fill="#C4B8AE" opacity="0.4"/>
+                <path d="M20 50 Q20 66 40 66 Q60 66 60 50 Z" fill="#C8853A" opacity="0.7"/>
+                <path d="M22 46 Q22 52 40 52 Q58 52 58 46 Q58 38 40 38 Q22 38 22 46Z" fill="#E8C87A" opacity="0.8"/>
+                <path d="M28 38 Q28 28 40 28 Q52 28 52 38" fill="#8B4513" opacity="0.6"/>
+                <ellipse cx="40" cy="28" rx="12" ry="4" fill="#5C2E0A" opacity="0.5"/>
+                <ellipse cx="34" cy="44" rx="4" ry="2" fill="white" opacity="0.25"/>
+              </svg>
+            </div>
+            <div class="menu-card-body">
+              <p class="menu-card-name">自家製プリン</p>
+              <p class="menu-card-desc">卵・牛乳・砂糖だけで作る昔ながらの固めプリン。少し苦めのカラメルがコーヒーによく合います。</p>
+              <div class="menu-card-footer">
+                <span class="menu-price">¥ 500</span>
+                <span class="badge badge-popular">人気</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img" style="background:#EEEAE4;">
+              <svg width="80" height="80" viewBox="0 0 80 80">
+                <ellipse cx="40" cy="62" rx="22" ry="6" fill="#C4B8AE" opacity="0.3"/>
+                <path d="M22 46 Q22 64 40 64 Q58 64 58 46 Q58 34 40 34 Q22 34 22 46Z" fill="#1C120C" opacity="0.8"/>
+                <ellipse cx="40" cy="34" rx="18" ry="5" fill="#3D2B1F" opacity="0.8"/>
+                <ellipse cx="40" cy="32" rx="14" ry="8" fill="white" opacity="0.9"/>
+                <ellipse cx="36" cy="30" rx="4" ry="3" fill="white" opacity="0.4"/>
+              </svg>
+            </div>
+            <div class="menu-card-body">
+              <p class="menu-card-name">コーヒーゼリー</p>
+              <p class="menu-card-desc">燈ブレンドで丁寧に作ったゼリーに生クリームをのせて。シンプルだけど、これが通年人気です。</p>
+              <div class="menu-card-footer">
+                <span class="menu-price">¥ 550</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img" style="background:#FAF0F3;">
+              <svg width="80" height="80" viewBox="0 0 80 80">
+                <rect x="18" y="40" width="44" height="22" rx="3" fill="#F4C0D1" opacity="0.7"/>
+                <rect x="18" y="32" width="44" height="12" rx="2" fill="white" opacity="0.9"/>
+                <rect x="18" y="24" width="44" height="12" rx="2" fill="#F4C0D1" opacity="0.5"/>
+                <ellipse cx="28" cy="23" rx="5" ry="7" fill="#D4537E" opacity="0.8"/>
+                <ellipse cx="40" cy="22" rx="5" ry="7" fill="#D4537E" opacity="0.8"/>
+                <ellipse cx="52" cy="23" rx="4" ry="6" fill="#D4537E" opacity="0.7"/>
+              </svg>
+            </div>
+            <div class="menu-card-body">
+              <p class="menu-card-name">季節のケーキ</p>
+              <p class="menu-card-desc">近くの洋菓子店から週2回仕入れ。今季は苺のショートケーキ。数に限りがございます。</p>
+              <div class="menu-card-footer">
+                <span class="menu-price">¥ 650</span>
+                <span class="badge badge-limited">数量限定</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Morning -->
+      <div class="menu-panel" id="tab-morning">
+        <div class="morning-box">
+          <p class="morning-label">MORNING TIME</p>
+          <p class="morning-title">営業開始 〜 11:00</p>
+          <p class="morning-text">近所の「むつみパン」さんから毎朝仕入れる食パンを使ったモーニング。焼くとほんとうに香ばしくて、バターだけで十分美味しいんです。15年来のお付き合いです。</p>
+        </div>
+
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-img" style="background:#EEEDF8;">
+              <svg width="80" height="80" viewBox="0 0 80 80">
+                <rect x="14" y="36" width="52" height="26" rx="4" fill="#AFA9EC" opacity="0.45"/>
+                <rect x="18" y="28" width="44" height="12" rx="3" fill="#CECBF6" opacity="0.65"/>
+                <rect x="22" y="22" width="36" height="10" rx="2" fill="#E8E6F8" opacity="0.8"/>
+                <ellipse cx="58" cy="24" rx="9" ry="9" fill="#F5F0E8" stroke="#C4B8AE" stroke-width="1"/>
+                <ellipse cx="58" cy="24" rx="5.5" ry="5.5" fill="#E8C87A" opacity="0.75"/>
+                <rect x="20" y="60" width="24" height="4" rx="2" fill="#C4B8AE" opacity="0.4"/>
+                <rect x="48" y="58" width="16" height="8" rx="3" fill="#9FE1CB" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="menu-card-body">
+              <p class="menu-card-name">モーニングセット</p>
+              <p class="menu-card-desc">トースト・ゆで卵・サラダ・燈ブレンドのセット。ゆで卵は半熟でお出しします（固茹でもご対応可）。</p>
+              <div class="menu-card-footer">
+                <span class="menu-price">¥ 800</span>
+                <span class="badge badge-morning">〜 11:00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img" style="background:#F5ECD8;">
+              <svg width="80" height="80" viewBox="0 0 80 80">
+                <rect x="18" y="30" width="44" height="28" rx="4" fill="#E8C87A" opacity="0.4"/>
+                <rect x="18" y="24" width="44" height="10" rx="3" fill="#D4A855" opacity="0.5"/>
+                <rect x="22" y="18" width="36" height="10" rx="2" fill="#C8853A" opacity="0.35"/>
+                <ellipse cx="40" cy="56" rx="18" ry="5" fill="#B09060" opacity="0.2"/>
+                <rect x="28" y="36" width="24" height="3" rx="1.5" fill="#C8853A" opacity="0.35"/>
+                <rect x="28" y="42" width="18" height="3" rx="1.5" fill="#C8853A" opacity="0.25"/>
+                <ellipse cx="58" cy="24" rx="8" ry="8" fill="#F5F0E8" stroke="#C4B8AE" stroke-width="1"/>
+                <ellipse cx="58" cy="24" rx="5" ry="5" fill="#E8C87A" opacity="0.7"/>
+              </svg>
+            </div>
+            <div class="menu-card-body">
+              <p class="menu-card-name">トースト単品</p>
+              <p class="menu-card-desc">むつみパンの食パンをこんがり焼いて。バター付き。コーヒーと一緒にシンプルに楽しみたい方へ。</p>
+              <div class="menu-card-footer">
+                <span class="menu-price">¥ 350</span>
+                <span class="badge badge-morning">〜 11:00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img" style="background:#EAF3DE;">
+              <svg width="80" height="80" viewBox="0 0 80 80">
+                <ellipse cx="40" cy="55" rx="26" ry="10" fill="#97C459" opacity="0.25"/>
+                <ellipse cx="30" cy="46" rx="10" ry="7" fill="#C0DD97" opacity="0.6"/>
+                <ellipse cx="44" cy="44" rx="8" ry="6" fill="#97C459" opacity="0.5"/>
+                <ellipse cx="54" cy="48" rx="9" ry="6" fill="#C0DD97" opacity="0.5"/>
+                <ellipse cx="36" cy="40" rx="6" ry="5" fill="#639922" opacity="0.4"/>
+                <ellipse cx="50" cy="42" rx="5" ry="4" fill="#639922" opacity="0.35"/>
+                <rect x="20" y="58" width="40" height="5" rx="2.5" fill="#C0DD97" opacity="0.4"/>
+              </svg>
+            </div>
+            <div class="menu-card-body">
+              <p class="menu-card-name">サラダ単品</p>
+              <p class="menu-card-desc">季節の野菜を少しだけ。朝にちょうどいい量に仕上げています。ドレッシングはマスター手製。</p>
+              <div class="menu-card-footer">
+                <span class="menu-price">¥ 300</span>
+                <span class="badge badge-morning">〜 11:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Afternoon -->
+  <section class="afternoon" id="afternoon">
+    <div class="container fade-in">
+      <p class="section-label">AFTERNOON</p>
+      <div class="afternoon-time">14:00 — 16:00</div>
+      <h2 class="section-title">午後のひととき</h2>
+      <div class="section-divider"></div>
+      <p>子どもを送り出したあと、少しだけ自分だけの時間を。<br>静かな12席の空間で、一杯のコーヒーと自家製スイーツを。<br>マスターに話しかけてくれるのも、大歓迎です。</p>
+    </div>
+  </section>
+
+  <!-- Info -->
+  <section class="info-section" id="info">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">ACCESS</p>
+        <h2 class="section-title">アクセス・店舗情報</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="info-grid fade-in">
+        <div>
+          <table class="info-table">
+            <tr>
+              <th>住所</th>
+              <td>福岡県福岡市中央区薬院2丁目16-1</td>
+            </tr>
+            <tr>
+              <th>最寄り駅</th>
+              <td>地下鉄七隈線 薬院大通駅<br>徒歩5分</td>
+            </tr>
+            <tr>
+              <th>営業時間</th>
+              <td>
+                月〜金　8:00 – 19:00<br>
+                土・日　9:00 – 18:00<br>
+                <span class="info-note">モーニング 〜 11:00</span>
+              </td>
+            </tr>
+            <tr>
+              <th>定休日</th>
+              <td>火曜日</td>
+            </tr>
+            <tr>
+              <th>席数</th>
+              <td>12席（カウンター6席・テーブル2卓）</td>
+            </tr>
+            <tr>
+              <th>電話</th>
+              <td><a href="tel:092-521-0000" class="phone-link">092-521-XXXX</a></td>
+            </tr>
+            <tr>
+              <th>SNS</th>
+              <td class="sns-note">#珈琲燈 でお客様の投稿をぜひ</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="map-placeholder">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="16" r="9" stroke="#C8853A" stroke-width="1.5"/>
+            <circle cx="20" cy="16" r="3.5" fill="#C8853A" opacity="0.6"/>
+            <path d="M20 25 Q10 34 20 39 Q30 34 20 25Z" fill="#C8853A" opacity="0.4"/>
+          </svg>
+          <span class="map-main-text">Googleマップを埋め込む</span>
+          <span class="map-sub-text">福岡市中央区薬院2丁目16-1</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-logo">珈琲 燈</p>
+    <p class="footer-sub">CAFÉ AKARI — YAKUIN, FUKUOKA</p>
+    <p class="footer-note">© 珈琲 燈 All rights reserved.</p>
+  </footer>
+
+  <!-- Bottom nav (mobile) -->
+  <nav class="bottom-nav">
+    <div class="bottom-nav-inner">
+      <a href="#" class="bnav-item active">
+        <svg class="bnav-icon" viewBox="0 0 20 20" fill="none">
+          <rect x="2" y="10" width="6" height="8" rx="1" fill="currentColor" opacity="0.9"/>
+          <rect x="10" y="6" width="8" height="12" rx="1" fill="currentColor" opacity="0.5"/>
+        </svg>
+        ホーム
+      </a>
+
+      <a href="#menu" class="bnav-item">
+        <svg class="bnav-icon" viewBox="0 0 20 20" fill="none">
+          <rect x="2" y="5" width="16" height="2" rx="1" fill="currentColor"/>
+          <rect x="2" y="9" width="16" height="2" rx="1" fill="currentColor"/>
+          <rect x="2" y="13" width="10" height="2" rx="1" fill="currentColor"/>
+        </svg>
+        メニュー
+      </a>
+
+      <a href="#afternoon" class="bnav-item">
+        <svg class="bnav-icon" viewBox="0 0 20 20" fill="none">
+          <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10 2V4M10 16V18M2 10H4M16 10H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        午後
+      </a>
+
+      <a href="#info" class="bnav-item">
+        <svg class="bnav-icon" viewBox="0 0 20 20" fill="none">
+          <circle cx="10" cy="8" r="5" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10 13 Q4 18 10 20 Q16 18 10 13Z" fill="currentColor" opacity="0.5"/>
+        </svg>
+        アクセス
+      </a>
+    </div>
+  </nav>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+      });
+    });
+
+    const menuTabs = document.querySelectorAll('.menu-tab');
+    const menuPanels = document.querySelectorAll('.menu-panel');
+
+    menuTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const tabName = tab.dataset.tab;
+
+        menuTabs.forEach(t => t.classList.remove('active'));
+        menuPanels.forEach(panel => panel.classList.remove('active'));
+
+        tab.classList.add('active');
+        document.getElementById('tab-' + tabName).classList.add('active');
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 
 </body>
-</html>
